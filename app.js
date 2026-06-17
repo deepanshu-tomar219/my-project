@@ -66,10 +66,9 @@ app.engine("ejs", ejsMate);
 
 app.use(express.static(path.join(__dirname, "/public")));
 
-// app.get("/", (req, res) => {
-
-//   res.send("Hi i am root");
-// });
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
 
 const store = new MongoStore({
     mongoUrl: dbUrl,
