@@ -1,0 +1,83 @@
+<% if(success && success.length> 0) {%>
+
+    <div class="container mt-3">
+
+    <div class="alert alert-success d-flex align-items-center justify-content-between px-4 py-3 fade show"
+         role="alert"
+         style="border-radius: 8px;">
+
+        <!-- Left Side -->
+        <div class="d-flex align-items-center">
+
+            <!-- Success Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="22"
+                 height="22"
+                 fill="currentColor"
+                 class="bi bi-check-circle-fill me-3"
+                 viewBox="0 0 16 16">
+
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.97 11.03a.75.75 0 0 0 1.08.022l3.992-4.99a.75.75 0 1 0-1.14-.976L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06l2.646 2.647z"/>
+            </svg>
+
+            <!-- Message -->
+            <span class="mb-0 fs-5">
+                <%= success %>
+            </span>
+
+        </div>
+
+        <!-- Close Button -->
+        <button type="button"
+                class="btn-close ms-3"
+                data-bs-dismiss="alert"
+                aria-label="Close">
+        </button>
+
+    </div>
+
+</div>
+
+<%}%>
+
+    <% if(error && error.length> 0) {%>
+
+    <div class="container mt-3">
+
+    <div class="alert alert-danger d-flex align-items-center justify-content-between px-4 py-3 fade show"
+         role="alert"
+         style="border-radius: 8px;">
+
+        <!-- Left Side -->
+        <div class="d-flex align-items-center">
+
+            <!-- Success Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="22"
+                 height="22"
+                 fill="currentColor"
+                 class="bi bi-check-circle-fill me-3"
+                 viewBox="0 0 16 16">
+
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.97 11.03a.75.75 0 0 0 1.08.022l3.992-4.99a.75.75 0 1 0-1.14-.976L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06l2.646 2.647z"/>
+            </svg>
+
+            <!-- Message -->
+            <span class="mb-0 fs-5">
+                <%= error %>
+            </span>
+
+        </div>
+
+        <!-- Close Button -->
+        <button type="button"
+                class="btn-close ms-3"
+                data-bs-dismiss="alert"
+                aria-label="Close">
+        </button>
+
+    </div>
+
+</div>
+
+<%}%>
