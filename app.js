@@ -66,10 +66,10 @@ app.engine("ejs", ejsMate);
 
 app.use(express.static(path.join(__dirname, "/public")));
 
-app.get("/", (req, res) => {
+// app.get("/", (req, res) => {
 
-  res.send("Hi i am root");
-});
+//   res.send("Hi i am root");
+// });
 
 const store = new MongoStore({
     mongoUrl: dbUrl,
